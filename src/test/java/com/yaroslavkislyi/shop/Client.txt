@@ -1,0 +1,40 @@
+Добавление клиента
+POST
+http://localhost:8082/api/v1/clients
+body
+{
+     "name": "Cassandra",
+     "surname": "Black",
+     "birthday": "1999-11-05",
+     "gender": "female",
+     "registrationDate": "2025-06-06",
+     "addressId": 15
+}
+
+
+
+Удаление клиента
+DELETE
+http://localhost:8082/api/v1/clients/14
+
+
+
+Получение клиента по имени и фамилии
+GET
+http://localhost:8082/api/v1/clients/name&surname/Cassandra/Black
+
+
+
+Получение всех клиентов
+GET
+http://localhost:8082/api/v1/clients
+
+
+
+Обновление адреса клиента
+PUT
+ {
+    "country": "USA",
+    "city": "Panama",
+    "street": "West Side"
+}

@@ -1,0 +1,42 @@
+Добавление поставщика
+POST
+http://localhost:8082/api/v1/suppliers
+body
+{
+    "name": "miratorg",
+    "addressId": 7,
+    "phoneNumber": "9-568-256-25-89"
+}
+
+
+
+
+Изменение адреса поставщика
+PUT
+http://localhost:8082/api/v1/suppliers/5
+body
+    {
+        "country": "Canada",
+        "city": "Kvebek",
+        "street": "Klenovaya"
+    }
+
+
+
+Удаление поставщика по id
+DELETE
+http://localhost:8082/api/v1/suppliers/5
+
+
+
+Получение всех поставщиков
+GET
+http://localhost:8082/api/v1/suppliers
+
+
+
+Получение поставщика по id
+GET
+http://localhost:8082/api/v1/suppliers
+
+

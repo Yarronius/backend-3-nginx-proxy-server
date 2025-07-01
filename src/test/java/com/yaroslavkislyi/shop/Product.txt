@@ -1,0 +1,40 @@
+Добавление продукта
+POST
+http://localhost:8082/api/v1/products
+body
+{
+    "name": "apple",
+    "category": "fruits",
+    "price": 120,
+    "availableStock": 1000,
+    "lastUpdateDate": "2025-06-06",
+    "supplierId": 3,
+    "imageId": "f6eb1c4a-ae3a-4020-9745-82429b84e474"
+}
+
+
+
+
+Уменьшение количества товаров
+GET
+http://localhost:8082/api/v1/products/3/50
+
+
+
+Получение товара по id
+GET
+http://localhost:8082/api/v1/product/3
+
+
+
+Получение всех доступных товаров
+GET
+http://localhost:8082/api/v1/products
+
+
+
+Удаление товара по id
+DELETE
+http://localhost:8082/api/v1/products/4
+
+

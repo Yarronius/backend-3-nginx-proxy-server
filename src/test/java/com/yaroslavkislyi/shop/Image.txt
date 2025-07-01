@@ -1,0 +1,35 @@
+добавление изображения
+POST
+http://localhost:8082/api/v1/images
+body -> binary -> выбрать файл
+
+
+
+Изменение изображения (на вход подается id изображения и новая строка для замены)
+PUT
+http://localhost:8082/api/v1/images
+body  //base64-строка без префикса "data:image/png;base64,
+{
+    "id": "f17e39af-874c-4a6d-a762-21eefded1ef5",
+   "image": "iVBORw0KGgoAAAANSUhE..."
+}
+
+
+
+Удаление изображения по id изображения
+DELETE
+http://localhost:8082/api/v1/images/61d58a2d-0117-459e-b8fe-fb3d0934bcc1
+
+
+
+Получение изображения конкретного товара (по id товара)
+GET
+http://localhost:8082/api/v1/product_id/{product_id}
+
+
+Получение изображения товара по id изображения
+http://localhost:8082/api/v1/images/uuid/f6eb1c4a-ae3a-4020-9745-82429b84e474
+
+
+
+
